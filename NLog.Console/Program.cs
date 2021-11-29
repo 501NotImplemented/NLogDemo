@@ -2,9 +2,13 @@
 {
 	internal class Program
 	{
+		private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
 		private static void Main(string[] args)
 		{
-			System.Console.WriteLine("Hello World!");
+			logger.Debug("Hello from logger!");
+
+			System.Console.WriteLine("Hello from console!");
 		}
 	}
 }
