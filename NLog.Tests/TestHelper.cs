@@ -17,7 +17,7 @@ namespace NLog.Tests
 
 			for (var i = 0; i < 10; i++)
 			{
-				logger.Info("Add {i}", i);
+				logger.Info("This message is ignored when is called from NUnit test data provider {i}", i);
 				testData.Add(i);
 			}
 
